@@ -2,7 +2,7 @@
 
 This repository contains C# code samples that demonstrate scale-up strategies for Azure Cognitive Search.
 
-If you want a code sample that deploys Cognitive Search into multiple regions for global availability, try this Bicep sample instead: 
+If you want a code sample that deploys Cognitive Search into multiple regions for global availability, try this Bicep sample instead: [**azure-search-multiple-regions**](https://github.com/Azure-Samples/azure-search-multiple-regions).
 
 ## In this repository
 
