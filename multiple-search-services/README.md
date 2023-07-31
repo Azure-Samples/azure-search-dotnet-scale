@@ -49,7 +49,7 @@ Open the **appsettings.json** file in your local copy of the sample application 
 
     + Find the Admin API key in the [Keys tab](https://docs.microsoft.com/azure/search/search-security-api-keys#find-existing-keys) on the search service's portal page.
 
-1. "searchEndpoint": "https://<search-service-name>.search.windows.net":
+1. "searchEndpoint": `"https://<search-service-name>.search.windows.net"``:
 
     + Find the URI in the [search service's Overview portal page](https://docs.microsoft.com/azure/search/search-manage#overview-home-page).
 

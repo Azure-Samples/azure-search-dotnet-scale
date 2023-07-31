@@ -48,11 +48,7 @@ This .NET Core console application is featured in [C# Tutorial: Combine data fro
    + Select this container, click **Upload**, and then upload all of the JSON files in the *src/blobs* folder, ranging from *Rooms1.json* through *Rooms15.json*. These files contain room details for each of the seven hotels.
    + In the left pane, go to **Settings > Access Keys** and get the connection string for key1. It also goes into the project's *appsettings.json* file.
 
-This sample is available in two versions:
-
-+ **v10** uses the previous [Microsoft.Azure.Search](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/search/client10) client libraries
-
-+ **v11** uses the new [Azure.Search.Documents](https://docs.microsoft.com/dotnet/api/overview/azure/search.documents-readme) client library, highly recommended for all new projects
+This sample is available in two versions. **V10** uses the deprecated [Microsoft.Azure.Search](https://learn.microsoft.com/en-us/dotnet/api/microsoft.azure.search) client libraries. We recommend **v11** and the new [Azure.Search.Documents](https://docs.microsoft.com/dotnet/api/overview/azure/search.documents-readme) client library for all new projects.
 
 ## Run the sample
 
