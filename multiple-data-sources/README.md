@@ -2,8 +2,8 @@
 page_type: sample
 languages:
   - csharp
-name: Index multiple data sources in Azure Cognitive Search
-description: "Demonstrates indexing from multiple Azure data sources, including Cosmos DB and Blob storage. This example builds a C# console application using the Azure Cognitive Search .NET SDK."
+name: Index multiple data sources in Azure AI Search
+description: "Demonstrates indexing from multiple Azure data sources, including Cosmos DB and Blob storage. This example builds a C# console application using the Azure AI Search .NET SDK."
 products:
   - azure
   - azure-cognitive-search
@@ -12,18 +12,18 @@ products:
 urlFragment: multiple-data-sources
 ---
 
-# Index multiple data sources using Azure Cognitive Search indexers
+# Index multiple data sources using Azure AI Search indexers
 
 ![Flask sample MIT license badge](https://img.shields.io/badge/license-MIT-green.svg)
 
-Demonstrates Azure Cognitive Search indexing from Azure Cosmos DB and Azure Blob storage, populating an index by combining data from different data sources.
+Demonstrates Azure AI Search indexing from Azure Cosmos DB and Azure Blob storage, populating an index by combining data from different data sources.
 
-This .NET Core console application is featured in [C# Tutorial: Combine data from multiple data sources in one search index](https://docs.microsoft.com/azure/search/tutorial-multiple-data-sources). When you run the program, a console window emits output messages for each step. This sample runs on an Azure Cognitive Search service, importing content from Azure Cosmos DB and Azure Blob storage, using services and connection information that you provide.
+This .NET Core console application is featured in [C# Tutorial: Combine data from multiple data sources in one search index](https://docs.microsoft.com/azure/search/tutorial-multiple-data-sources). When you run the program, a console window emits output messages for each step. This sample runs on an Azure AI Search service, importing content from Azure Cosmos DB and Azure Blob storage, using services and connection information that you provide.
 
 ## Prerequisites
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)
-- [Azure Cognitive Search service](https://docs.microsoft.com/azure/search/search-create-service-portal)
+- [Azure AI Search service](https://docs.microsoft.com/azure/search/search-create-service-portal)
 - [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal)
 - [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account)
 
@@ -56,7 +56,7 @@ This sample is available in two versions. **V10** uses the deprecated [Microsoft
 
 1. Edit the  *appsettings.json* and fill in the appropriate account names, keys, and connection strings:
 
-   + SearchServiceName and SearchServiceAdminKey can be found in Overview and Keys portal pages of your Azure Cognitive Search service.
+   + SearchServiceName and SearchServiceAdminKey can be found in Overview and Keys portal pages of your Azure AI Search service.
    + Blob storage and Cosmos DB connection information can be found in the key pages.
    + For Blob storage, you also need the name of the storage account.
 
@@ -72,4 +72,4 @@ After a successful run, you should see a new index named "hotel-rooms-sample" in
 
 ## Next steps
 
-You can learn more about Azure Cognitive Search on the [official documentation site](https://docs.microsoft.com/azure/search).
+You can learn more about Azure AI Search on the [official documentation site](https://docs.microsoft.com/azure/search).
