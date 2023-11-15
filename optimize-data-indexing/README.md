@@ -3,7 +3,7 @@ page_type: sample
 languages:
   - csharp
 name: Optimize indexing with the push API
-description: In Azure Cognitive Search, you can push data from any data source to an index. In this C# sample, learn how to index more efficiently.
+description: In Azure AI Search, you can push data from any data source to an index. In this C# sample, learn how to index more efficiently.
 products:
   - azure
   - azure-cognitive-search
@@ -14,11 +14,11 @@ urlFragment: optimize-data-indexing
 
 ![Flask sample MIT license badge](https://img.shields.io/badge/license-MIT-green.svg)
 
-Azure Cognitive Search supports [two basic approaches](https://docs.microsoft.com/azure/search/search-what-is-data-import) for importing data into a search index: *pushing* your data into the index programmatically, or pointing an [Azure Cognitive Search indexer](https://docs.microsoft.com/azure/search/search-indexer-overview) at a supported data source to *pull* in the data.
+Azure AI Search supports [two basic approaches](https://docs.microsoft.com/azure/search/search-what-is-data-import) for importing data into a search index: *pushing* your data into the index programmatically, or pointing an [Azure AI Search indexer](https://docs.microsoft.com/azure/search/search-indexer-overview) at a supported data source to *pull* in the data.
 
 As data volumes grow or processing needs change, you might find that simple or default indexing strategies are no longer practical. This sample demonstrates how to efficiently index data using the push model by batching requests and leveraging an exponential backoff retry strategy.
 
-This .NET Core console app builds off of the code used in the [Quickstart](https://docs.microsoft.com/azure/search/search-get-started-dotnet) and uses the [Azure Cognitive Search .NET SDK](https://docs.microsoft.com/dotnet/api/?term=microsoft.azure.search) to create an index and efficiently load it with documents using the push model.
+This .NET Core console app builds off of the code used in the [Quickstart](https://docs.microsoft.com/azure/search/search-get-started-dotnet) and uses the [Azure AI Search .NET SDK](https://docs.microsoft.com/dotnet/api/?term=microsoft.azure.search) to create an index and efficiently load it with documents using the push model.
 
 The app shows how to:
 
@@ -31,12 +31,12 @@ The app shows how to:
 The index is modeled on a subset of the Hotels dataset, reduced for readability and comprehension. Index definition and documents are included in the code.
 
 > [!NOTE]
-> Network transfer speeds can be a limiting factor when indexing data. You might get a better sense of indexing efficiency if your Visual Studio client is on an [Azure virtual machine](https://azure.microsoft.com/services/virtual-machines/) in the cloud in the same location as Azure Cognitive Search. The [Data Science VM](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) is a good choice because Visual Studio is preinstalled.
+> Network transfer speeds can be a limiting factor when indexing data. You might get a better sense of indexing efficiency if your Visual Studio client is on an [Azure virtual machine](https://azure.microsoft.com/services/virtual-machines/) in the cloud in the same location as Azure AI Search. The [Data Science VM](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) is a good choice because Visual Studio is preinstalled.
 
 ## Prerequisites
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)
-- [Azure Cognitive Search service](https://docs.microsoft.com/azure/search/search-create-service-portal)
+- [Azure AI Search service](https://docs.microsoft.com/azure/search/search-create-service-portal)
 
 ## Setup
 
@@ -57,6 +57,6 @@ This sample is available in two versions.
 
 ## Next steps
 
-You can learn more about Azure Cognitive Search on the [official documentation site](https://docs.microsoft.com/azure/search).
+You can learn more about Azure AI Search on the [official documentation site](https://docs.microsoft.com/azure/search).
 
 The documentation provides additional guidance on [indexing large data sets](https://docs.microsoft.com/azure/search/search-howto-large-index).

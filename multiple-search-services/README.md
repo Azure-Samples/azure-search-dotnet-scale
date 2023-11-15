@@ -12,13 +12,13 @@ urlFragment: multiple-search-services
 
 # Search over multiple search services
 
-This Azure Cognitive Search sample shows you how to issue a single query across multiple search services and combine the results into a single page. This sample uses [Good Books data](https://github.com/zygmuntz/goodbooks-10k).
+This Azure AI Search sample shows you how to issue a single query across multiple search services and combine the results into a single page. This sample uses [Good Books data](https://github.com/zygmuntz/goodbooks-10k).
 
 ## Prerequisites
 
 + [.NET 3](https://dotnet.microsoft.com/download/dotnet/5.0)
 + [Git](https://git-scm.com/downloads)
-+ [Azure Cognitive Search service](https://docs.microsoft.com/azure/search/search-create-service-portal) on a billable tier (free tier is not supported)
++ [Azure AI Search service](https://docs.microsoft.com/azure/search/search-create-service-portal) on a billable tier (free tier is not supported)
 + Client app: [Visual Studio](https://visualstudio.microsoft.com/downloads/), PowerShell, or [Visual Studio Code](https://code.visualstudio.com/download)
 
 ## Clone the search sample with git
@@ -35,11 +35,11 @@ git clone https://github.com/Azure-Samples/azure-search-dotnet-samples
 
 1. [Create a resource group if one doesn't already exist](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups).
 
-1. [Create 2 or more Cognitive Search services if they don't already exist](https://docs.microsoft.com/azure/search/search-create-service-portal), at [Basic tier](https://azure.microsoft.com/pricing/details/search/) or above.
+1. [Create 2 or more AI Search services if they don't already exist](https://docs.microsoft.com/azure/search/search-create-service-portal), at [Basic tier](https://azure.microsoft.com/pricing/details/search/) or above.
 
 ## Edit appsettings.json
 
-Open the **appsettings.json** file in your local copy of the sample application and change the following values in each section for every Cognitive Search service. If there are more than 2 Cognitive Search services, add a separate section for each additional search service
+Open the **appsettings.json** file in your local copy of the sample application and change the following values in each section for every Azure AI Search service. If there are more than 2 search services, add a separate section for each additional search service
 
 1. "indexName": "Name of the index to search on the Search Service":
 
@@ -79,7 +79,7 @@ To clean up resources created in this tutorial, [delete the resource group](http
 
 ## Next Steps
 
-Learn more about queries in Azure Cognitive Search
+Learn more about queries in Azure AI Search
 
 + [Access control lists (ACLs) in Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control)
 
