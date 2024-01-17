@@ -35,7 +35,8 @@ This .NET Core console application is featured in [C# Tutorial: Combine data fro
 
 1. Create and populate a Cosmos DB data source with hotels information:
 
-   + In the [Azure portal](https://portal.azure.com), create an Azure Cosmos DB account for the **Core (SQL)** API. 
+   + In the [Azure portal](https://portal.azure.com), create an Azure Cosmos DB account for the **Azure Cosmos DB for NoSQL
+** API. 
    + Create a new database named "hotel-rooms-db".
    + In Data Explorer, open the "hotel-rooms-db", create a new container named "hotels".
    + Open "hotels", select **Items**, select **Upload Item**, and then select the *src/cosmosdb/HotelsDataSubset_CosmosDB.json* file. It contains data for seven hotels, but no rooms data.
