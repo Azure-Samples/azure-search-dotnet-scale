@@ -38,9 +38,9 @@ namespace OptimizeDataIndexing
             Console.WriteLine("{0}", "Finding optimal batch size...\n");
             await TestBatchSizesAsync(searchClient, numTries: 3);
 
-            //long numDocuments = 100000;
-            //DataGenerator dg = new DataGenerator();
-            //List<Hotel> hotels = dg.GetHotels(numDocuments, "large");
+            long numDocuments = 100000;
+            DataGenerator dg = new DataGenerator();
+            List<Hotel> hotels = dg.GetHotels(numDocuments, "large");
 
             //Console.WriteLine("{0}", "Uploading using exponential backoff...\n");
             //await ExponentialBackoff.IndexDataAsync(searchClient, hotels, 1000, 8);
