@@ -45,15 +45,17 @@ The index is modeled on a subset of the Hotels dataset, reduced for readability 
 
 This sample is available in two versions.
 
-+ **v10** uses the previous [Microsoft.Azure.Search](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/search/client10) client libraries
-
-+ **v11** uses the new [Azure.Search.Documents](https://docs.microsoft.com/dotnet/api/overview/azure/search.documents-readme) client library, highly recommended for all new projects
+Use **v11** version and the [Azure.Search.Documents](https://docs.microsoft.com/dotnet/api/overview/azure/search.documents-readme) client library. The **v10** version is now obsolete and will be archived.
 
 ## Run the sample
 
 1. Open the OptimizeDataIndexing.sln project in Visual Studio.
+
 1. Update appsetting.json to use your search service name and admin api-key. The admin key is necessary for creating objects and loading data.
-1. Press F5 to build and run the project.
+
+1. Press F5 to build and run the project. On the first run, the sample prints batch size metrics to the console.
+
+1. Uncomment lines 41 through 49 and rerun and the program. On this run, the sample generates and sends batches of documents, up to 100,000 if you run the code without changing the parameters. This simulation can help you understand how quickly indexing occurs for a given batch size.
 
 ## Next steps
 
