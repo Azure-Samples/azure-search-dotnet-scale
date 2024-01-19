@@ -6,9 +6,8 @@ using Azure.Search.Documents.Models;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
@@ -127,19 +126,8 @@ namespace OptimizeDataIndexing
         // Returns size of object in MB
         public static double EstimateObjectSize(object data)
         {
-            // converting object to byte[] to determine the size of the data
-            BinaryFormatter bf = new BinaryFormatter();
-            MemoryStream ms = new MemoryStream();
-            byte[] Array;
-
-            // converting data to json for more accurate sizing
             var json = JsonSerializer.Serialize(data);
-            bf.Serialize(ms, json);
-            Array = ms.ToArray();
-
-            // converting from bytes to megabytes
-            double sizeInMb = (double)Array.Length / 1000000;
-
+            var sizeInMb = Encoding.Unicode.GetByteCount(json) / 1000000;
             return sizeInMb;
         }
 
