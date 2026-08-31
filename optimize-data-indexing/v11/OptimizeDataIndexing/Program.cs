@@ -7,7 +7,6 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
@@ -126,9 +125,8 @@ namespace OptimizeDataIndexing
         // Returns size of object in MB
         public static double EstimateObjectSize(object data)
         {
-            var json = JsonSerializer.Serialize(data);
-            var sizeInMb = Encoding.Unicode.GetByteCount(json) / 1000000;
-            return sizeInMb;
+            byte[] json = JsonSerializer.SerializeToUtf8Bytes(data);
+            return json.Length / 1_000_000d;
         }
 
         public static async Task ValidateIndexAsync(SearchIndexClient indexClient, string indexName, long numDocsIndexed)

@@ -21,7 +21,7 @@ namespace OptimizeDataIndexing
 
             // Define parameters for exponential backoff
             int attempts = 0;
-            TimeSpan delay = delay = TimeSpan.FromSeconds(2);
+            TimeSpan delay = TimeSpan.FromSeconds(2);
             int maxRetryAttempts = 5;
 
             // Implement exponential backoff
@@ -30,7 +30,10 @@ namespace OptimizeDataIndexing
                 try
                 {
                     attempts++;
-                    result = await searchClient.IndexDocumentsAsync(batch).ConfigureAwait(false);
+                    Response<IndexDocumentsResult> response = await searchClient
+                        .IndexDocumentsAsync(batch)
+                        .ConfigureAwait(false);
+                    result = response.Value;
 
                     var failedDocuments = result.Results.Where(r => r.Succeeded != true).ToList();
 
